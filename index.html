@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="css/main.css">
+<title>JavaScript API HW</title>
+<script src="https://ergast.com/api/f1/2020/1/driverStandings.json"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js" defer></script>
+</head>
+<body id="grad">
+    <div class="header">
+        <div class="col-12 col-md-6" id="left-side">
+            <h1><a href="./index.html">RACING DATABASE</a></h1>
+        </div>
+        <div class="col-12 col-md-6" id="right-side">
+            <h3><a href="./about.html">About Us</a></h3>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <form name="racerData" id="racerDataForm">
+                        <label for="season" >Season</label>
+                        <input type="text" name="season" id="season" placeholder="1950-2020">
+
+                        <label for="round" >Round</label>
+                        <input type="text" name="round" id="round" placeholder="1-9">
+                        
+                        <button type="submit" id="submit-Button" Onclick="load_data(); return false">Submit</button>
+                    </form>
+                    <section>
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Position</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Nationality</th>
+                                <th scope="col">Sponsor</th>
+                                <th scope="col">Points</th>
+                                <th scope="col">More Info</th>
+                              </tr>
+                            </thead>
+                                <tbody class="racer-table">
+
+                                </tbody>
+                        </table>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<th></th>

@@ -1,0 +1,55 @@
+#grad {
+    background-image: linear-gradient(to right, rgba(0, 89, 255, 0.801), rgb(0, 128, 90), rgb(0, 255, 98));
+}
+
+.header {
+    padding-top: 1%;
+    display: flex;
+    color: black
+}
+
+#left-side {
+    padding-left: 1%;
+}
+
+#right-side {
+    text-align: right;
+    padding-right: 2%;
+}
+
+.main {
+    padding-top: 1.5%;
+    color: black;
+}
+
+#racerDataForm {
+    font-weight: bolder;
+}
+
+#submit-Button {
+    border-radius: 12%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    background-color: orange;
+    font-weight: bolder;
+}
+
+.table {
+    font-weight: bolder;
+}
+
+#about {
+    font-size: 400%;
+    text-align: center;
+    color: red;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
